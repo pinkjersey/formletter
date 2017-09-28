@@ -12,23 +12,26 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
   <link rel="stylesheet" href="app.css">
-  <link rel="stylesheet" type="text/css" href="markitup/skins/markitup/style.css" />
-  <link rel="stylesheet" type="text/css" href="markitup/sets/default/style.css" />
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body ng-controller="AppCtrl">
-
 <label>Set data: <input type="text" ng-model="data"/></label><br />
-<div id="example3div">
-  This is example2div. It will be replaced. {{data}}
+<div id="template">
+  <div id="example3div">
+    If you see this, it means that something isn't working.
+  </div>
 </div>
+
 
 
 
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
-  <script src="Markdown.Converter.js"></script>
+  <script src="https://cdn.rawgit.com/showdownjs/showdown/1.7.4/dist/showdown.min.js"></script>
+  <!-- <script src="Markdown.Converter.js"></script> -->
   <script src="view1/view1.js"></script>
   <script src="view2/view2.js"></script>
   <script src="components/version/version.js"></script>
@@ -37,6 +40,11 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="markitup/jquery.markitup.js"></script>
   <script type="text/javascript" src="markitup/sets/default/set.js"></script>
-
+<script src="vendor/jquery.js"></script>
+<script src="vendor/what-input.js"></script>
+<script src="vendor/foundation.js"></script>
+<script>
+    $(document).foundation();
+</script>
 </body>
 </html>

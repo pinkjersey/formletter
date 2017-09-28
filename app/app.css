@@ -1,4 +1,5 @@
 /* app css stylesheet */
+#template {  margin: 1em; }
 
 .menu {
   list-style: none;
